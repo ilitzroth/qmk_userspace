@@ -90,9 +90,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
       KC_ESC, LCAG(KC_1), LCAG(KC_2), LCAG(KC_3), LCAG(KC_4), LCAG(KC_5), LCAG(KC_6), LCAG(KC_7), LCAG(KC_8), LCAG(KC_9), LCAG(KC_0), KC_NO,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-      KC_NO, KC_NO, DRGSCRL, KC_MOUSE_WHEEL_UP, SNIPING, KC_LPRN, KC_RPRN, KC_PGUP, KC_UP, KC_PGDN, KC_NO, KC_NO,
+      KC_NO, KC_NO, DRGSCRL, QK_MOUSE_WHEEL_UP, SNIPING, KC_LPRN, KC_RPRN, KC_PGUP, KC_UP, KC_PGDN, KC_NO, KC_NO,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-      KC_NO, KC_NO,   KC_MOUSE_WHEEL_LEFT,   KC_MOUSE_WHEEL_DOWN,  KC_MOUSE_WHEEL_RIGHT,   KC_LBRC,      KC_RBRC,   KC_LEFT,   KC_DOWN,   KC_LEFT,  KC_NO,  KC_NO,
+      KC_NO, KC_NO,   QK_MOUSE_WHEEL_LEFT,   QK_MOUSE_WHEEL_DOWN,  QK_MOUSE_WHEEL_RIGHT,   KC_LBRC,      KC_RBRC,   KC_LEFT,   KC_DOWN,   KC_LEFT,  KC_NO,  KC_NO,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
         KC_NO, KC_NO, KC_BTN3, KC_BTN2,  KC_BTN1, LSFT(KC_LBRC),    LSFT(KC_RBRC), KC_BTN1, KC_BTN2, KC_BTN3, KC_NO, KC_NO,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
