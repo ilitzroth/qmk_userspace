@@ -66,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_BSPC,    PT_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_EQUAL,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                         RAISE, KC_LSFT,   KC_LCTL, /**/     KC_NO,  LALT_T(KC_SPC),
-                        LCAG_T(KC_NO), KC_NO /**/,    LGUI_T(KC_ENT)
+                        LCTL_T(KC_BSPC), LCAG_T(KC_NO)/**/,    LGUI_T(KC_ENT)
   ),
 
   [LAYER_LOWER] = LAYOUT(
