@@ -50,7 +50,7 @@ static uint16_t auto_pointer_layer_timer = 0;
 //#define TAB_FUN LT(LAYER_FUNCTION, KC_TAB)
 //#define ENT_SYM LT(LAYER_SYMBOLS, KC_ENT)
 #define BSP_NUM LT(LAYER_NUMERAL, KC_BSPC)
-#define _L_PTR(KC) LT(LAYER_POINTER, KC)
+#define TAB_PTR LT(LAYER_POINTER, KC_TAB)
 
 #ifndef POINTING_DEVICE_ENABLE
 #    define DRGSCRL KC_NO
@@ -65,7 +65,7 @@ static uint16_t auto_pointer_layer_timer = 0;
        KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P, \
        KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, \
        KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, \
-         LT(LAYER_POINTER, KC_TAB), BSP_NUM, LCAG_T(KC_NO), /**/ LGUI_T(KC_ENT), LALT_T(KC_SPC)
+         TAB_PTR, BSP_NUM, LCAG_T(KC_NO), /**/ LGUI_T(KC_ENT), LALT_T(KC_SPC)
 
 #define LAYOUT_NUMBER_BASE \
   KC_1, KC_2, KC_3, KC_4, KC_5, /**/ KC_6, KC_7, KC_8, KC_9, KC_0,      \
@@ -76,8 +76,8 @@ static uint16_t auto_pointer_layer_timer = 0;
 #define LAYOUT_MOUSE_BASE \
   KC_NO, DRGSCRL, QK_MOUSE_WHEEL_UP, SNIPING, KC_NO, KC_NO, KC_PGUP, KC_UP, KC_PGDN, QK_BOOT, \
     KC_NO, QK_MOUSE_WHEEL_LEFT, QK_MOUSE_WHEEL_DOWN,QK_MOUSE_WHEEL_RIGHT,   KC_NO,/**/ KC_NO, KC_LEFT, KC_DOWN, KC_LEFT,  KC_NO, \
-    KC_NO, KC_BTN3, KC_BTN2, KC_BTN1, KC_NO, /**/ KC_NO, KC_BTN1, KC_BTN2, KC_BTN3, KC_NO, KC_NO, \
-    KC_TRNS, KC_TRNS, KC_TRNS, /**/ KC_TRNS, KC_TRNS,
+    KC_NO, KC_BTN3, KC_BTN2, KC_BTN1, KC_NO, /**/ KC_NO, KC_BTN1, KC_BTN2, KC_BTN3, KC_NO, \
+    KC_TRNS, KC_TRNS, KC_TRNS, /**/ KC_TRNS, KC_TRNS
 
 #define LAYOUT_wrapper(...) LAYOUT(__VA_ARGS__)
 
