@@ -27,7 +27,7 @@ enum charybdis_keymap_layers {
     //    LAYER_MEDIA,
     LAYER_POINTER,
     LAYER_NUMERAL,
-    //sLLAYER_SYMBOLS,
+    LAYER_CONFIG,
 };
 
 // Automatically enable sniping-mode on the pointer layer.
@@ -74,10 +74,16 @@ static uint16_t auto_pointer_layer_timer = 0;
     KC_TRNS, KC_TRNS, KC_TRNS, /**/ KC_TRNS, KC_TRNS
 
 #define LAYOUT_MOUSE_BASE \
-  KC_ESC, DRGSCRL, QK_MOUSE_WHEEL_UP, SNIPING, KC_NO, KC_NO, KC_PGUP, KC_UP, KC_PGDN, QK_BOOT, \
+  KC_ESC, DRGSCRL, QK_MOUSE_WHEEL_UP, SNIPING, KC_NO, KC_NO, KC_PGUP, KC_UP, KC_PGDN, MO(LAYER_CONFIG), \
     KC_NO, QK_MOUSE_WHEEL_LEFT, QK_MOUSE_WHEEL_DOWN,QK_MOUSE_WHEEL_RIGHT,   KC_NO,/**/ KC_NO, KC_LEFT, KC_DOWN, KC_RIGHT,  KC_NO, \
-    TG(LAYER_POINTER), KC_BTN3, KC_BTN2, KC_BTN1, KC_NO, /**/ KC_NO, KC_BTN1, KC_BTN2, KC_BTN3, KC_NO, \
+   QK_LAYER_LOCK, KC_BTN3, KC_BTN2, KC_BTN1, KC_NO, /**/ KC_NO, KC_BTN1, KC_BTN2, KC_BTN3, KC_NO, \
     KC_TRNS, KC_TRNS, KC_TRNS, /**/ KC_TRNS, KC_TRNS
+
+#define LAYOUT_CONFIG_BASE \
+  QK_BOOT, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
+    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
+    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
+    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO
 
 #define LAYOUT_wrapper(...) LAYOUT(__VA_ARGS__)
 
@@ -88,7 +94,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   /* [LAYER_MEDIA] = LAYOUT_wrapper(LAYOUT_LAYER_MEDIA), */
   [LAYER_NUMERAL] = LAYOUT_wrapper(LAYOUT_NUMBER_BASE),
   [LAYER_POINTER] = LAYOUT_wrapper(LAYOUT_MOUSE_BASE),
-  /* [LAYER_SYMBOLS] = LAYOUT_wrapper(LAYOUT_LAYER_SYMBOLS),   */
+  [LAYER_CONFIG] = LAYOUT_wrapper(LAYOUT_CONFIG_BASE),
 };
 // clang-format on
 
