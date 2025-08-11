@@ -65,12 +65,12 @@ static uint16_t auto_pointer_layer_timer = 0;
        KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P, \
        KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, \
        KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, \
-         TAB_PTR, BSP_NUM, LCAG_T(KC_NO), /**/ LGUI_T(KC_ENT), LALT_T(KC_SPC)
+         TAB_PTR, BSP_NUM, KC_NO, /**/ LGUI_T(KC_ENT), LALT_T(KC_SPC)
 
 #define LAYOUT_NUMBER_BASE \
   KC_1, KC_2, KC_3, KC_4, KC_5, /**/ KC_6, KC_7, KC_8, KC_9, KC_0,      \
     KC_GRAVE, KC_ESC, KC_NO, KC_NO, KC_LBRC, /**/ KC_RBRC, KC_MINS, KC_BSLS, KC_EQUAL, KC_QUOT, \
-    LCAG(KC_1), LCAG(KC_2), LCAG(KC_3), LCAG(KC_4), LCAG(KC_5), /**/ LCAG(KC_6), LCAG(KC_7), LCAG(KC_8), LCAG(KC_9), LCAG(KC_0), \
+    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
     KC_TRNS, KC_TRNS, KC_TRNS, /**/ KC_TRNS, KC_TRNS
 
 #define LAYOUT_MOUSE_BASE \
