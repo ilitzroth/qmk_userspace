@@ -50,7 +50,7 @@ static uint16_t auto_pointer_layer_timer = 0;
 //#define TAB_FUN LT(LAYER_FUNCTION, KC_TAB)
 //#define ENT_SYM LT(LAYER_SYMBOLS, KC_ENT)
 #define BSP_NUM LT(LAYER_NUMERAL, KC_BSPC)
-#define TAB_PTR LT(LAYER_POINTER, KC_NO)
+#define TAB_PTR LT(LAYER_POINTER, PB_1)
 
 #ifndef POINTING_DEVICE_ENABLE
 #    define DRGSCRL KC_NO
@@ -69,7 +69,7 @@ static uint16_t auto_pointer_layer_timer = 0;
 
 #define LAYOUT_NUMBER_BASE \
   KC_1, KC_2, KC_3, KC_4, KC_5, /**/ KC_6, KC_7, KC_8, KC_9, KC_0,      \
-    KC_GRAVE, KC_ESC, KC_NO, KC_NO, KC_LBRC, /**/ KC_RBRC, KC_MINS, KC_BSLS, KC_EQUAL, KC_QUOT, \
+    KC_GRAVE, KC_ESC, KC_NO, LCTL(KC_TAB), KC_LBRC, /**/ KC_RBRC, KC_MINS, KC_BSLS, KC_EQUAL, KC_QUOT, \
     KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
     KC_TRNS, KC_TRNS, KC_TRNS, /**/ KC_TRNS, KC_TRNS
 
