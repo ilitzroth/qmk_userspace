@@ -26,6 +26,8 @@
 #    define NO_ACTION_ONESHOT
 #endif // __arm__
 
+#define AUTO_SHIFT_MODIFIERS
+
 /* Charybdis-specific features. */
 
 #ifdef POINTING_DEVICE_ENABLE
