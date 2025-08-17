@@ -27,7 +27,7 @@
 #endif // __arm__
 
 #define AUTO_SHIFT_MODIFIERS
-
+#define AUTO_SHIFT_REPEAT
 /* Charybdis-specific features. */
 
 #ifdef POINTING_DEVICE_ENABLE
