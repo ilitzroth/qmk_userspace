@@ -50,7 +50,7 @@ static uint16_t auto_pointer_layer_timer = 0;
 //#define TAB_FUN LT(LAYER_FUNCTION, KC_TAB)
 //#define ENT_SYM LT(LAYER_SYMBOLS, KC_ENT)
 #define BSP_NUM LT(LAYER_NUMERAL, KC_BSPC)
-#define TAB_PTR LT(LAYER_POINTER, OSM(MOD_LCTL | MOD_LGUI | MOD_LALT))
+#define TAB_PTR LT(LAYER_POINTER, OS_LCAG)
 
 #ifndef POINTING_DEVICE_ENABLE
 #    define DRGSCRL KC_NO
