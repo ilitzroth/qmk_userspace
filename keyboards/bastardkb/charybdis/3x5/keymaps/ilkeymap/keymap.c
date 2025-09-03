@@ -70,7 +70,7 @@ static uint16_t auto_pointer_layer_timer = 0;
 #define LAYOUT_NUMBER_BASE \
   KC_1, KC_2, KC_3, KC_4, KC_5, /**/ KC_6, KC_7, KC_8, KC_9, KC_0,      \
     KC_GRAVE, KC_ESC, LSFT(KC_TAB), LCTL(KC_TAB), KC_LBRC, /**/ KC_RBRC, KC_MINS, KC_BSLS, KC_EQUAL, KC_QUOT, \
-    KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
+    KC_NO, KC_NO, KC_NO, KC_EXECUTE, KC_NO, /**/  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, \
     KC_TRNS, KC_TRNS, KC_TRNS, /**/ KC_TRNS, KC_TRNS
 
 //QK_AUTO_SHIFT_DOWN	AS_DOWN	Lower the Auto Shift timeout variable (down)
