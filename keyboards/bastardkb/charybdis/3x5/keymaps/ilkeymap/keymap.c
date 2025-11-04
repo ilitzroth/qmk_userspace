@@ -67,7 +67,7 @@ static uint16_t auto_pointer_layer_timer = 0;
        KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, \
          KC_LCTL, BSP_NUM, TAB_PTR, /**/ LGUI_T(KC_ENT), LALT_T(KC_SPC)
 
-#define LAYOUT_NUMBER_BASE
+#define LAYOUT_NUMBER_BASE                                              \
   KC_1, KC_2, KC_3, KC_4, KC_5, /**/ KC_6, KC_7, KC_8, KC_9, KC_0,      \
     KC_GRAVE, KC_ESC, LSFT(KC_TAB), LCTL(KC_TAB), KC_LBRC, /**/ KC_RBRC, KC_MINS, KC_BSLS, KC_EQUAL, KC_QUOT, \
     KC_F1, KC_F2, KC_BSPC, KC_EXECUTE, KC_TAB, /**/  KC_MPLY, KC_MPRV, KC_MNXT, KC_SPC, KC_ENT, \
